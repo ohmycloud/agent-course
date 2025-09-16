@@ -1,14 +1,10 @@
 [project]
-name = "agent-course"
+name = "github-sentinel"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "gradio>=5.45.0",
-]
-
-[tool.uv.workspace]
-members = [
-    "github-sentinel",
+    "click>=8.2.1",
+    "openai>=1.107.3",
 ]
