@@ -58,8 +58,8 @@ class CommandHandler:
 
     def fetch_updates(self, args):
         updates = self.github_client.fetch_updates(args.repo)
-        for update in updates:
-            print(update)
+        for k, v in updates.items():
+            print(k, v)
 
     def export_daily_progress(self, args):
         self.github_client.export_daily_progress(args.repo)
